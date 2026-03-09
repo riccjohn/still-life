@@ -109,7 +109,7 @@ export function Feed() {
             letterSpacing: '0.04em',
             color: 'var(--text-primary)',
           }}>
-            Infinite Inspo
+            Still Life
           </span>
           <span style={{
             fontFamily: 'var(--font-body), "DM Sans", sans-serif',

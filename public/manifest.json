@@ -1,6 +1,6 @@
 {
-  "name": "Infinite Inspo",
-  "short_name": "Inspo",
+  "name": "Still Life",
+  "short_name": "Still Life",
   "description": "Infinite scroll art feed from the world's great museums",
   "start_url": "/",
   "display": "standalone",

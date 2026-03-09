@@ -17,13 +17,13 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Infinite Inspo",
+  title: "Still Life",
   description: "Infinite scroll art feed from the world's great museums",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Infinite Inspo",
+    title: "Still Life",
   },
 };
 
