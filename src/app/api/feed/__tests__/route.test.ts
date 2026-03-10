@@ -21,13 +21,19 @@ import { fetchClevelandArtworks } from '../../../../lib/adapters/cleveland'
 import { GET } from '../route'
 
 function makeArtwork(id: string, source: 'met' | 'aic' | 'cleveland' = 'met'): Artwork {
+  // Use a valid museum hostname so artworks pass the quality filter allowlist.
+  const imageUrlBySource: Record<typeof source, string> = {
+    met: 'https://images.metmuseum.org/CRDImages/ep/original/DT1.jpg',
+    aic: 'https://www.artic.edu/iiif/2/abc/full/843,/0/default.jpg',
+    cleveland: 'https://openaccess-cdn.clevelandart.org/1/1_web.jpg',
+  }
   return {
     id,
     source,
     title: 'Test Title',
     artist: 'Test Artist',
     year: '2000',
-    imageUrl: 'https://example.com/image.jpg',
+    imageUrl: imageUrlBySource[source],
     imageWidth: 800,
     imageHeight: 600,
     museum: 'Test Museum',
